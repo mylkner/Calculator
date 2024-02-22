@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.calculatorDiv {
+    height: 100vh;
+    background: linear-gradient(320deg, #eb92be, #ffef78, #63c9b4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 2em;
+}
+
+.calculator {
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    place-items: center;
+    padding: 20px;
+}
+
+.value {
+    border: none;
+    outline: none;
+    grid-column: span 4;
+    width: 340px;
+    height: 80px;
+    border-radius: 10px;
+    text-align: right;
+    margin: 10px;
+    font-size: 40px;
+    caret-color: transparent;
+    cursor: default;
+}
+
+.calculator span {
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.calculator span:active {
+    background-color: coral;
+}
+
+.calculator .bigBtn {
+    grid-column: span 2;
+    width: 160px;
+}
+
+.calculator .clear:active {
+    background-color: red;
+}
+
+.calculator .operation {
+    background-color: #fc0fc0;
+    color: white;
+}
+
+.calculator .operation:active {
+    background-color: blueviolet;
+}
+
+.calculator .equals {
+    background-color: aquamarine;
+    color: black;
+}
+
+.calculator .equals:active {
+    background-color: pink;
+}
